@@ -3,6 +3,7 @@ import s from "./App.module.scss"
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/HomePage/Home";
 import Heroes from "./Pages/HeroesPage/Heroes";
+import "./index.css"
 
 function App() {
   return (
