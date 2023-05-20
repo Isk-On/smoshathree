@@ -120,6 +120,22 @@ align-items: center;
 -moz-box-shadow: 0px 100px 23px -23px rgba(0, 0, 0, 0.63) inset;
 box-shadow: 0px 100px 23px -23px rgba(0, 0, 0, 0.63) inset;
 
+button{
+  position: absolute;
+  top: 3130px;
+  right: 780px;
+  color: white;
+  width: 260px;
+  height: 80px;
+  border: 5px solid darkslategrey;
+  background: none;
+  font-size: 27px;
+  font-weight: normal;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
 h1{
   position: absolute;
@@ -141,5 +157,77 @@ h2{
   color: white;
   font-size: 100px;
 }
+
+  }
+  .container{
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+.Contain{
+  position: absolute;
+  top: 4100px;
+  left: 510px;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top: 4000px;
+  left: 590px;
+}
+
+p{
+  color: white;
+  font-size: 120px;
+  text-align: center;
+
+}
+
+.Inter{
+  position: absolute;
+  width: 60px;
+  top: 3350px;
+  right: 865px;
+}
+    img{
+      height: 1200px;
+    }
+  }
+  .LastBlack{
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+
+    p{
+      width: 1200px;
+      color: white;
+      font-size: 30px;
+      
+    }
+  }
+  .LastContent{
+   
+.Text{
+  position: absolute;
+  top: 5075px;
+  left: 215px;
+    p{
+      color: grey;
+      font-size: 70px;
+    }
+
+    h1{
+      color: white;
+      font-size: 130px;
+    }
+  }
   }
 }

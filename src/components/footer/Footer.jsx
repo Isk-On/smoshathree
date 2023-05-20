@@ -10,11 +10,12 @@ const Footer = () => {
       <img className={s.logo} src={logo} alt="" />
       <img className={s.logo2} src={logo2} alt="" />
       </div>
+      <div className={s.Container}>
       <p>
-        Dota и логотип Dota являются товарными знаками и/или зарегистрированными
-        товарными знаками Valve Corporation. 2023 Valve Corporation, все права
-        защищены.
+      Dota и логотип Dota являются товарными знаками и/или зарегистрированными
       </p>
+      <p>товарными знаками Valve Corporation. 2023 Valve Corporation, все права защищены.</p>
+      </div>
     </div>
   );
 };

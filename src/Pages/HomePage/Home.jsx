@@ -6,6 +6,10 @@ import Location from "../../assets/Images/Location.jpg";
 import Cards from "../../components/Cards/Cards";
 import pic from "../../assets/Images/YourMother.jpg";
 import Footer from "../../components/footer/Footer";
+import { Link } from "react-router-dom";
+import International from "../../assets/Images/scene.jpg";
+import InterIcon from "../../assets/icons/dpc.svg";
+import BloodSeeker from "../../assets/Images/background4.png";
 
 const Home = () => {
   return (
@@ -45,6 +49,33 @@ const Home = () => {
           Их невероятные способности и сокрушительные ульты непременно приведут
           вас к победе.
         </h1>
+        <Link to="/HeroesPage" style={{ textDecoration: "none" }}>
+          <button>ВСЕ ГЕРОИ</button>
+        </Link>
+      </div>
+      <div className={s.container}>
+        <img src={International} alt="" />
+        <img className={s.Inter} src={InterIcon} alt="" />
+        <h1>ПРОФЕССИОНАЛЬНЫЙ</h1>
+        <div className={s.Contain}>
+          <p>ТУРНИРНЫЙ</p>
+          <p>СЕЗОН</p>
+        </div>
+      </div>
+      <div className={s.LastBlack}>
+        <p>
+        Отдыхая от продвижения по системе рейтинга, вы можете учиться у лучших.
+        В профессиональном сезоне вы увидите высочайший уровень соревновательной
+        Доты, и следить за ним можно в клиенте игры, на Twitch и на Steam.TV. Не
+        пропускайте ни одной трансляции, ведь с каждым матчем приближается самый
+        большой киберспортивный турнир в мире — The International.</p>
+      </div>
+      <div className={s.LastContent}>
+        <img src={BloodSeeker} alt="" />
+        <div className={s.Text}>
+        <p>ВСТУПАЙТЕ В</p>
+        <h1>БИТВУ</h1>
+        </div>
       </div>
       <Footer />
     </div>
