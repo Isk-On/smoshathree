@@ -23,18 +23,48 @@
     gap: 50px;
     li {
       list-style: none;
-      color: wheat;
+      color: white;
       font-size: 35px;
       font-weight: 300;
       display: flex;
-
     }
   }
 
-  .ContainerLanguage{
-
-    h1{
-        color: white;
+  .ContainerLanguage {
+    width: 180px;
+    padding-top: 10px;
+    .wel {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      font-size: 17px;
+      font-weight: 600;
     }
+    h1 {
+      color: grey;
+      font-size: 25px;
+      font-weight: normal;
+    }
+  }
+  button{
+    position: absolute;
+    top: 0;
+    right: 60px;
+    width: 450px;
+    height: 120px;
+    border: 7px solid grey;
+    border-top: none;
+    background: none;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+
+ 
   }
 }

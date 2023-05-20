@@ -23,9 +23,18 @@ const Header = () => {
         <li>Киберспорт</li>
       </Link>
       <div className={s.ContainerLanguage}>
-        <h1>Выберите язык</h1>
+        <div className={s.text}>
+          <h1 className={s.wel}>ВОЙТИ</h1>
+        <h1>Выберите</h1>
+        <h1>язык</h1>
         </div>
+        </div>
+
       </div>
+      <button>
+        <p className={s.play}>Играть</p>
+        <p>Бесплатно</p>
+      </button>
     </div>
     
   );
