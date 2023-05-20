@@ -4,7 +4,8 @@ import s from "./Home.module.scss";
 import video from "../../assets/gifs/dota.gif";
 import Location from "../../assets/Images/Location.jpg";
 import Cards from "../../components/Cards/Cards";
-import pic from "../../assets/Images/YourMother.jpg"
+import pic from "../../assets/Images/YourMother.jpg";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -33,11 +34,19 @@ const Home = () => {
           поменяется — начинайте защищать своего Древнего уже сейчас.
         </p>
         <button>Свежие Новости</button>
-
       </div>
       <div className={s.content}>
         <img src={pic} alt="" />
+        <p>КОГО ВЫ</p>
+        <h2>ВЫБЕРЕТЕ?</h2>
+        <h1>
+          Список героев в Dota 2 огромен и безгранично разнообразен: здесь вы
+          встретите и магов-тактиков, и свирепых громил, и хитроумных негодяев.
+          Их невероятные способности и сокрушительные ульты непременно приведут
+          вас к победе.
+        </h1>
       </div>
+      <Footer />
     </div>
   );
 };

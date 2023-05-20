@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 0px;
+  background-color: black;
 
 
 
@@ -111,8 +112,34 @@ align-items: center;
     }
   }
   .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     -webkit-box-shadow: 0px 100px 23px -23px rgba(0, 0, 0, 0.63) inset;
 -moz-box-shadow: 0px 100px 23px -23px rgba(0, 0, 0, 0.63) inset;
 box-shadow: 0px 100px 23px -23px rgba(0, 0, 0, 0.63) inset;
+
+
+h1{
+  position: absolute;
+  color: white;
+  top: 2950px;
+  width: 1300px;
+}
+
+p{
+  top: 2750px;
+  position: absolute;
+  color: white;
+  font-size: 60px;
+}
+
+h2{
+  top: 2810px;
+  position: absolute;
+  color: white;
+  font-size: 100px;
+}
   }
 }
