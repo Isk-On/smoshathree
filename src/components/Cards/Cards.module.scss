@@ -1,0 +1,26 @@
+.root{
+display: flex;
+gap: 20px;
+
+.image1{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 70px;
+    top: 650px;
+}
+.image2{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 650px;
+    top: 650px;
+}
+.image3{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 1200px;
+    top: 650px;
+}
+}
