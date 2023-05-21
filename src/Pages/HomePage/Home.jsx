@@ -11,7 +11,11 @@ import International from "../../assets/Images/scene.jpg";
 import InterIcon from "../../assets/icons/dpc.svg";
 import BloodSeeker from "../../assets/Images/background4.png";
 
+
 const Home = () => {
+
+
+
   return (
     <div className={s.root}>
       <Header />
@@ -53,6 +57,8 @@ const Home = () => {
           <button>ВСЕ ГЕРОИ</button>
         </Link>
       </div>
+
+
       <div className={s.container}>
         <img src={International} alt="" />
         <img className={s.Inter} src={InterIcon} alt="" />

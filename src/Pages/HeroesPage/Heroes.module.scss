@@ -1,16 +1,71 @@
 .root{
-    background: rgb(179,177,177);
-    background: linear-gradient(293deg, rgba(179,177,177,1) 3%, rgba(83,82,82,0.5886729691876751) 56%, rgba(45,45,45,1) 95%);
     width: 100%;
     height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+
 
 .container{
- 
-    
+width: 100px;
 
-    h1{
-        font-size: 20px;
-    }
+p{
+    text-align: center;
+    position: absolute;
+    color:white;
+    width: 1000px;
+    height: 30px;
+    left: 400px;
+    top: 200px;
+    font-size: 30px;
 }
+
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+        .cards{
+    
+          img{
+            color: white;
+           
+          }
+         
+          }
+        }
+      }
+
+      h1{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 400px;
+            border-radius: 50%;
+            animation-name: her;
+            animation-timing-function: 2s;
+            animation-duration: 2s;
+            animation-delay: inherit;
+            animation-iteration-count: infinite;
+
+            @keyframes her {
+                0%{
+                transform: rotate(360deg);
+                }
+        }
+    }
 
 }

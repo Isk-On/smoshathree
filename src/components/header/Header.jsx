@@ -24,9 +24,9 @@ const Header = () => {
       </Link>
       <div className={s.ContainerLanguage}>
         <div className={s.text}>
-          <h1 className={s.wel}>ВОЙТИ</h1>
-        <h1>Выберите</h1>
-        <h1>язык</h1>
+          <p className={s.wel}>ВОЙТИ</p>
+        <p>Выберите</p>
+        <p>язык</p>
         </div>
         </div>
 
