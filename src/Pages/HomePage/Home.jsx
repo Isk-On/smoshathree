@@ -10,18 +10,24 @@ import { Link } from "react-router-dom";
 import International from "../../assets/Images/scene.jpg";
 import InterIcon from "../../assets/icons/dpc.svg";
 import BloodSeeker from "../../assets/Images/background4.png";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Home = () => {
-
-
-
   return (
     <div className={s.root}>
       <Header />
-      <div className={s.Container}>
+      <div data-aos="fade-right"  className={s.Container}>
         <p>«СОВРЕМЕННЫЙ МНОГОПОЛЬЗОВАТЕЛЬСКИЙ ШЕДЕВР»</p>
         <p className={s.title}>DESTRUCTOID</p>
+        <div className={s.dotaDownloadButton}>
+          <img src={s.steamLogo} alt="" />
+          <div className={s.textColumn}>
+            
+          </div>
+        </div>
       </div>
 
       <img className={s.video} src={video} alt="" />
@@ -86,6 +92,7 @@ const Home = () => {
       <Footer />
     </div>
   );
+
 };
 
 export default Home;

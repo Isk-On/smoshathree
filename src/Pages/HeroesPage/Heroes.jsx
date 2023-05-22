@@ -4,11 +4,10 @@ import s from "./Heroes.module.scss";
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
-import Loader from "../../assets/gifs/SF.gif"
-import background from "../../assets/Images/background.jpg"
+import Loader from "../../assets/gifs/SF.gif";
+import background from "../../assets/Images/background.jpg";
 
 const Heroes = () => {
-
   const [Data, setData] = useState([]);
   const [Data2, setData2] = useState([]);
 
@@ -25,7 +24,6 @@ const Heroes = () => {
       });
   }, []);
 
-
   return (
     <div className={s.root} style={{ backgroundImage: `url(${background})` }}>
       <Header />
@@ -38,30 +36,28 @@ const Heroes = () => {
           вас к победе.
         </p>
       </div>
-      
+
       <div className={s.content}>
-          {Data.length > 0 ? (
-            <>
-              {Data.map((arr, i) => {
-                return (
-                  <div key={arr.id}>
-                    <div className={s.cards}>
-                      <img src={arr.img} alt="" />
-
-                          </div>
-                        </div>
-                );
-              })}
-            </>
-          ) : (
-            <>
-              <h1>
-                <img src={Loader} alt="" />
-              </h1>
-            </>
-          )}
-        </div>
-
+        {Data.length > 0 ? (
+          <>
+            {Data.map((arr, i) => {
+              return (
+                <div key={arr.id}>
+                  <div className={s.cards}>
+                    <img src={arr.img} alt="" />
+                  </div>
+                </div>
+              );
+            })}
+          </>
+        ) : (
+          <>
+            <h1>
+              <img src={Loader} alt="" />
+            </h1>
+          </>
+        )}
+      </div>
     </div>
   );
 };
