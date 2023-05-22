@@ -11,8 +11,7 @@ import International from "../../assets/Images/scene.jpg";
 import InterIcon from "../../assets/icons/dpc.svg";
 import BloodSeeker from "../../assets/Images/background4.png";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
 AOS.init();
 
 const Home = () => {
@@ -23,9 +22,10 @@ const Home = () => {
         <p>«СОВРЕМЕННЫЙ МНОГОПОЛЬЗОВАТЕЛЬСКИЙ ШЕДЕВР»</p>
         <p className={s.title}>DESTRUCTOID</p>
         <div className={s.dotaDownloadButton}>
-          <img src={s.steamLogo} alt="" />
+          <img className={s.steamLogo} src={"https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/steam_icon.svg"} alt="" />
           <div className={s.textColumn}>
-            
+            <p>ИГРАТЬ БЕСПЛАТНО</p>
+            <p>СКАЧАТЬ В STEAM</p>
           </div>
         </div>
       </div>

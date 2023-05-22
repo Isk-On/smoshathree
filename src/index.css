@@ -1,8 +1,14 @@
-*{
+@font-face {
+  font-family: 'AlbertusNova';
+  src: local('AlbertusNova.woff2'),
+    url('./assets/fonts/AlbertusNova.woff2') format('truetype');
+  font-weight: bold;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  font-family: "Albertus Nova";
-  font-weight: 900;
+
+  font-family: "AlbertusNova";
 }

@@ -14,19 +14,36 @@
     display: flex;
     flex-direction: column;
 
-    .dotaDownloadButton{
+    .dotaDownloadButton { 
+      .textColumn{
+        p{
+          font-size: 30px;
+        }
+      }
+      .steamLogo {
+        width: 63px;
+        height: 63px;
+      }
+      .textColumn{
+        display: flex;
+        flex-direction: column;
+      }
+
+      display: flex;
+      
+
       width: 450px;
-    height: 120px;
+      min-height: 120px;
 
-    border: 5px solid grey;
+      border: 5px solid grey;
 
-    background: none;
-    color: #fff;
+      background: none;
+      color: #fff;
 
-    font-size: 30px;
+      font-size: 30px;
 
-    cursor: pointer;
-    border-radius: 5px;
+      cursor: pointer;
+      border-radius: 5px;
     }
 
     .title {
@@ -37,13 +54,12 @@
     p {
       color: white;
       font-size: 90px;
-      font-family: "Albertus Nova";
       font-style: normal;
       font-weight: 400;
     }
   }
 
-  .video{
+  .video {
     pointer-events: none;
     user-select: none;
   }
@@ -61,8 +77,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 100;
 
-    .k  {
+    .k {
       position: absolute;
       top: 1550px;
       color: white;
@@ -185,7 +202,6 @@
       font-size: 61px;
       position: absolute;
       top: 3646px;
-      
     }
 
     p {
@@ -236,5 +252,4 @@
       }
     }
   }
-
 }
