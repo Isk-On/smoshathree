@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import s from "./Home.module.scss";
-import video from "../../assets/gifs/dota.gif";
+// import video from "../../assets/gifs/dota.gif";
 import Location from "../../assets/Images/Location.jpg";
 import Cards from "../../components/Cards/Cards";
 import pic from "../../assets/Images/YourMother.jpg";
@@ -10,19 +10,25 @@ import { Link } from "react-router-dom";
 import International from "../../assets/Images/scene.jpg";
 import InterIcon from "../../assets/icons/dpc.svg";
 import BloodSeeker from "../../assets/Images/background4.png";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 AOS.init();
 
 const Home = () => {
   return (
     <div className={s.root}>
       <Header />
-      <div data-aos="fade-right"  className={s.Container}>
+      <div data-aos="fade-right" className={s.Container}>
         <p>«СОВРЕМЕННЫЙ МНОГОПОЛЬЗОВАТЕЛЬСКИЙ ШЕДЕВР»</p>
         <p className={s.title}>DESTRUCTOID</p>
         <div className={s.dotaDownloadButton}>
-          <img className={s.steamLogo} src={"https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/steam_icon.svg"} alt="" />
+          <img
+            className={s.steamLogo}
+            src={
+              "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/steam_icon.svg"
+            }
+            alt=""
+          />
           <div className={s.textColumn}>
             <p>ИГРАТЬ БЕСПЛАТНО</p>
             <p>СКАЧАТЬ В STEAM</p>
@@ -30,7 +36,13 @@ const Home = () => {
         </div>
       </div>
 
-      <img className={s.video} src={video} alt="" />
+      <video preload="auto" autoPlay loop playsInline muted>
+        <source
+          type="video/mp4"
+          src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_02.mp4"
+        ></source>
+      </video>
+
       <div className={s.Black}>
         <Cards />
       </div>
@@ -64,7 +76,6 @@ const Home = () => {
         </Link>
       </div>
 
-
       <div className={s.container}>
         <img src={International} alt="" />
         <img className={s.Inter} src={InterIcon} alt="" />
@@ -76,23 +87,24 @@ const Home = () => {
       </div>
       <div className={s.LastBlack}>
         <p>
-        Отдыхая от продвижения по системе рейтинга, вы можете учиться у лучших.
-        В профессиональном сезоне вы увидите высочайший уровень соревновательной
-        Доты, и следить за ним можно в клиенте игры, на Twitch и на Steam.TV. Не
-        пропускайте ни одной трансляции, ведь с каждым матчем приближается самый
-        большой киберспортивный турнир в мире — The International.</p>
+          Отдыхая от продвижения по системе рейтинга, вы можете учиться у
+          лучших. В профессиональном сезоне вы увидите высочайший уровень
+          соревновательной Доты, и следить за ним можно в клиенте игры, на
+          Twitch и на Steam.TV. Не пропускайте ни одной трансляции, ведь с
+          каждым матчем приближается самый большой киберспортивный турнир в мире
+          — The International.
+        </p>
       </div>
       <div className={s.LastContent}>
         <img src={BloodSeeker} alt="" />
         <div className={s.Text}>
-        <p>ВСТУПАЙТЕ В</p>
-        <h1>БИТВУ</h1>
+          <p>ВСТУПАЙТЕ В</p>
+          <h1>БИТВУ</h1>
         </div>
       </div>
       <Footer />
     </div>
   );
-
 };
 
 export default Home;

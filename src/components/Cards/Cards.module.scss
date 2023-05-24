@@ -1,26 +1,66 @@
-.root{
-display: flex;
-gap: 20px;
+.root {
+  display: flex;
+  justify-content: center;
 
-.image1{
+  .cards {
+    display: flex;
+    gap: 45px;
+
     position: absolute;
-    width: 500px;
-    height: 300px;
-    left: 70px;
-    top: 650px;
-}
-.image2{
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    left: 650px;
-    top: 650px;
-}
-.image3{
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    left: 1200px;
-    top: 650px;
-}
+    bottom: -30px;
+
+    transition: 1s;
+    .card {
+      .image {
+        transition: 400ms;
+
+        overflow: hidden;
+
+        background-color: grey;
+
+        max-width: 440px;
+        max-height: 250px;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: 400ms;
+          background-color: red;
+          background: rgba(0, 0, 0, 0.7);
+        }
+
+        &:hover img {
+          opacity: 0.6;
+        }
+
+        .imageText {
+          transition: 1s;
+
+          transform: translateY(-60px);
+          color: #fff;
+        }
+        &:hover .imageText {
+          transform: translateY(-180px);
+          transition: 1s;
+        }
+        .img {
+          position: relative;
+          z-index: 0;
+          img {
+            display: block;
+          }
+          //   .hr{
+          //     position: absolute;
+          //     z-index: 1;
+
+          //     background-color: #fff;
+
+          //     width: 100%;
+          //     height: 5px;
+
+          //     bottom: 500px;
+          //   }
+        }
+      }
+    }
+  }
 }
